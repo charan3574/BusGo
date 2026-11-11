@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwiftBus - Online Bus Ticket Booking System</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">🚌</span>
+        <span class="logo-text">Swift<strong>Bus</strong></span>
+      </div>
+      <div id="mongoDbStatusBadge" class="db-status-badge" title="Connecting to MongoDB on your laptop...">
+        <span class="db-dot"></span> <span class="db-label">MongoDB: Connecting...</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#search-section" class="nav-link active">Book Ticket</a>
+        <button id="openPnrBtn" class="nav-btn-secondary">Check PNR / Ticket</button>
+        <a href="admin.html" class="nav-btn-primary">Admin Portal ⚙️</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section & Search Bar -->
+  <section id="search-section" class="hero-section">
+    <div class="hero-content">
+      <div class="badge">🚀 FASTEST & MOST COMFORTABLE JOURNEYS</div>
+      <h1 class="hero-title">Book Your Bus Tickets Online</h1>
+      <p class="hero-subtitle">Select your favorite seats, compare fares, and get instant digital tickets with QR verification.</p>
+
+      <!-- Search Card -->
+      <div class="search-card">
+        <form id="busSearchForm" class="search-grid">
+          <div class="input-group">
+            <label for="fromCity"><span class="input-icon">📍</span> From</label>
+            <input type="text" id="fromCity" list="fromCitiesList" placeholder="e.g. New York" required autocomplete="off">
+            <datalist id="fromCitiesList"></datalist>
+          </div>
+
+          <button type="button" id="swapCitiesBtn" class="swap-btn" title="Swap From and To">⇄</button>
+
+          <div class="input-group">
+            <label for="toCity"><span class="input-icon">🎯</span> To</label>
+            <input type="text" id="toCity" list="toCitiesList" placeholder="e.g. Boston" required autocomplete="off">
+            <datalist id="toCitiesList"></datalist>
+          </div>
+
+          <div class="input-group">
+            <label for="travelDate"><span class="input-icon">📅</span> Travel Date</label>
+            <input type="date" id="travelDate" required>
+          </div>
+
+          <div class="input-group">
+            <label for="busTypeFilter"><span class="input-icon">🚍</span> Bus Type</label>
+            <select id="busTypeFilter">
+              <option value="all">All Bus Types</option>
+              <option value="sleeper">AC Sleeper</option>
+              <option value="seater">AC Seater</option>
+            </select>
+          </div>
+
+          <div class="input-group submit-group">
+            <button type="submit" class="btn-search">
+              <span>Find Buses</span> ➔
+            </button>
+          </div>
+        </form>
+
+        <!-- Popular Routes chips -->
+        <div class="popular-routes">
+          <span class="chips-label">Popular:</span>
+          <button class="chip" data-from="New York" data-to="Boston">New York ➔ Boston</button>
+          <button class="chip" data-from="New York" data-to="Washington DC">New York ➔ Washington DC</button>
+          <button class="chip" data-from="San Francisco" data-to="Los Angeles">San Francisco ➔ Los Angeles</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content / Results Section -->
+  <main class="main-container">
+    <div class="results-header" id="resultsHeader" style="display: none;">
+      <div>
+        <h2 id="searchSummaryTitle" class="section-title">Available Buses</h2>
+        <p id="searchSummarySub" class="section-subtitle">Showing all available trips for your date</p>
+      </div>
+
+      <div class="sort-controls">
+        <label for="sortBySelect">Sort by:</label>
+        <select id="sortBySelect">
+          <option value="departure_asc">Departure Time (Earliest)</option>
+          <option value="fare_asc">Price (Lowest first)</option>
+          <option value="fare_desc">Price (Highest first)</option>
+          <option value="rating_desc">Highest Rated</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Bus Listings Container -->
+    <div id="busesList" class="buses-container">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- Empty or Loading State -->
+    <div id="loadingState" class="state-container" style="display: none;">
+      <div class="spinner"></div>
+      <p>Searching for real-time bus routes and seat availability...</p>
+    </div>
+
+    <div id="noBusesState" class="state-container" style="display: none;">
+      <div class="state-icon">🚌💨</div>
+      <h3>No buses found for this route</h3>
+      <p>Try searching between popular cities like <strong>New York to Boston</strong> or choose another date.</p>
+    </div>
+  </main>
+
+  <!-- Passenger Details Modal -->
+  <div id="bookingModal" class="modal-overlay" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Passenger & Boarding Details</h3>
+          <p class="modal-subtitle" id="modalBusSub"></p>
+        </div>
+        <button class="modal-close" id="closeBookingModal">&times;</button>
+      </div>
+
+      <form id="passengerDetailsForm" class="modal-body">
+        <div class="selected-seats-badge" id="modalSeatsBadge"></div>
+
+        <div class="form-row-2">
+          <div class="input-group">
+            <label for="boardingPointSelect">Select Boarding Point</label>
+            <select id="boardingPointSelect" required></select>
+          </div>
+          <div class="input-group">
+            <label for="droppingPointSelect">Select Dropping Point</label>
+            <select id="droppingPointSelect" required></select>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+        <h4 class="form-section-title">Passenger Information</h4>
+        <div id="passengersFormList"></div>
+
+        <div class="divider"></div>
+        <h4 class="form-section-title">Contact Information (For Ticket & Updates)</h4>
+        <div class="form-row-2">
+          <div class="input-group">
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail" placeholder="your.name@example.com" required>
+          </div>
+          <div class="input-group">
+            <label for="contactPhone">Mobile Phone</label>
+            <input type="tel" id="contactPhone" placeholder="+1 (555) 000-0000" required>
+          </div>
+        </div>
+
+        <div class="fare-summary-box" id="modalFareSummary">
+          <!-- Fare breakdown -->
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-secondary" id="cancelBookingBtn">Cancel</button>
+          <button type="submit" class="btn-primary" id="confirmPayBtn">
+            <span>Pay & Confirm Booking</span> 🔒
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Ticket Confirmation & Print Modal -->
+  <div id="ticketModal" class="modal-overlay" style="display: none;">
+    <div class="modal-card ticket-modal-card">
+      <div class="modal-header no-print">
+        <div>
+          <h3 class="modal-title">🎉 Booking Confirmed!</h3>
+          <p class="modal-subtitle">Your e-ticket is ready. Present this or print it before boarding.</p>
+        </div>
+        <button class="modal-close" id="closeTicketModal">&times;</button>
+      </div>
+
+      <div class="ticket-printable" id="printableTicketArea">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="modal-footer no-print">
+        <button type="button" class="btn-secondary" id="ticketCloseBtn">Done</button>
+        <button type="button" class="btn-primary" id="printTicketBtn">
+          <span>🖨️ Print Ticket / Save PDF</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PNR Lookup Modal -->
+  <div id="pnrLookupModal" class="modal-overlay" style="display: none;">
+    <div class="modal-card pnr-card">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Check PNR / View Ticket</h3>
+          <p class="modal-subtitle">Enter your 6-character PNR code to retrieve your booking</p>
+        </div>
+        <button class="modal-close" id="closePnrModal">&times;</button>
+      </div>
+
+      <form id="pnrLookupForm" class="modal-body">
+        <div class="input-group">
+          <label for="pnrInput">Booking PNR Code</label>
+          <input type="text" id="pnrInput" placeholder="e.g. BUS-94821" style="text-transform: uppercase;" required>
+        </div>
+        <div id="pnrErrorMsg" class="error-banner" style="display: none;"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn-secondary" id="cancelPnrBtn">Close</button>
+          <button type="submit" class="btn-primary">Find My Ticket ➔</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer no-print">
+    <div class="footer-container">
+      <div class="footer-info">
+        <div class="logo">
+          <span class="logo-icon">🚌</span>
+          <span class="logo-text">Swift<strong>Bus</strong></span>
+        </div>
+        <p>Full-Stack Online Bus Reservation System built with Node.js & Express.</p>
+      </div>
+      <div class="footer-links">
+        <a href="admin.html">Admin Portal</a>
+        <a href="https://github.com" target="_blank">Open in VS Code</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SwiftBus Systems. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

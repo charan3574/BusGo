@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "🚌 Start Bus Ticket Server (MongoDB)",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/server.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "env": {
+        "PORT": "3000",
+        "MONGODB_URI": "mongodb://127.0.0.1:27017/bus_ticket_system"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "🌱 Seed MongoDB Database",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/scripts/seed.js",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "env": {
+        "MONGODB_URI": "mongodb://127.0.0.1:27017/bus_ticket_system"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "🧪 Run MongoDB Tests",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/test-mongo.js",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}

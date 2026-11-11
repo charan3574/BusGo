@@ -1,0 +1,236 @@
+[
+  {
+    "id": "book-1793083284074",
+    "pnr": "BUS-54LBZ7",
+    "busId": "bus-101",
+    "busName": "Skyline Express Volvo Multi-Axle",
+    "operator": "Skyline Travels",
+    "busType": "AC Sleeper (2+1)",
+    "from": "New York",
+    "to": "Boston",
+    "date": "2026-10-27",
+    "departureTime": "06:30",
+    "arrivalTime": "11:00",
+    "duration": "4h 30m",
+    "boardingPoint": "Port Authority",
+    "droppingPoint": "South Station",
+    "seats": [
+      "L10"
+    ],
+    "passengers": [
+      {
+        "seat": "L10",
+        "name": "John Doe",
+        "age": 28,
+        "gender": "Male"
+      }
+    ],
+    "contact": {
+      "email": "john@example.com",
+      "phone": "1234567890"
+    },
+    "fareDetails": {
+      "baseFare": 48,
+      "tax": 2.4,
+      "total": 50.4
+    },
+    "status": "CANCELLED",
+    "bookingTime": "2026-10-27T06:41:24.074Z"
+  },
+  {
+    "id": "book-1793083133437",
+    "pnr": "BUS-UELXU4",
+    "busId": "bus-101",
+    "busName": "Skyline Express Volvo Multi-Axle",
+    "operator": "Skyline Travels",
+    "busType": "AC Sleeper (2+1)",
+    "from": "New York",
+    "to": "Boston",
+    "date": "2026-10-27",
+    "departureTime": "06:30",
+    "arrivalTime": "11:00",
+    "duration": "4h 30m",
+    "boardingPoint": "Port Authority",
+    "droppingPoint": "South Station",
+    "seats": [
+      "L10"
+    ],
+    "passengers": [
+      {
+        "seat": "L10",
+        "name": "John Doe",
+        "age": 28,
+        "gender": "Male"
+      }
+    ],
+    "contact": {
+      "email": "john@example.com",
+      "phone": "1234567890"
+    },
+    "fareDetails": {
+      "baseFare": 48,
+      "tax": 2.4,
+      "total": 50.4
+    },
+    "status": "CANCELLED",
+    "bookingTime": "2026-10-27T06:38:53.437Z"
+  },
+  {
+    "id": "book-1793073598830",
+    "pnr": "BUS-MMWKMW",
+    "busId": "bus-101",
+    "busName": "Skyline Express Volvo Multi-Axle",
+    "operator": "Skyline Travels",
+    "busType": "AC Sleeper (2+1)",
+    "from": "New York",
+    "to": "Boston",
+    "date": "2026-10-27",
+    "departureTime": "06:30",
+    "arrivalTime": "11:00",
+    "duration": "4h 30m",
+    "boardingPoint": "Port Authority",
+    "droppingPoint": "South Station",
+    "seats": [
+      "L10"
+    ],
+    "passengers": [
+      {
+        "seat": "L10",
+        "name": "John Doe",
+        "age": 28,
+        "gender": "Male"
+      }
+    ],
+    "contact": {
+      "email": "john@example.com",
+      "phone": "1234567890"
+    },
+    "fareDetails": {
+      "baseFare": 48,
+      "tax": 2.4,
+      "total": 50.4
+    },
+    "status": "CANCELLED",
+    "bookingTime": "2026-10-27T03:59:58.831Z"
+  },
+  {
+    "id": "book-1793073554287",
+    "pnr": "BUS-NNMQSS",
+    "busId": "bus-101",
+    "busName": "Skyline Express Volvo Multi-Axle",
+    "operator": "Skyline Travels",
+    "busType": "AC Sleeper (2+1)",
+    "from": "New York",
+    "to": "Boston",
+    "date": "2026-10-27",
+    "departureTime": "06:30",
+    "arrivalTime": "11:00",
+    "duration": "4h 30m",
+    "boardingPoint": "Port Authority",
+    "droppingPoint": "South Station",
+    "seats": [
+      "L10"
+    ],
+    "passengers": [
+      {
+        "seat": "L10",
+        "name": "John Doe",
+        "age": 28,
+        "gender": "Male"
+      }
+    ],
+    "contact": {
+      "email": "john@example.com",
+      "phone": "1234567890"
+    },
+    "fareDetails": {
+      "baseFare": 48,
+      "tax": 2.4,
+      "total": 50.4
+    },
+    "status": "CANCELLED",
+    "bookingTime": "2026-10-27T03:59:14.287Z"
+  },
+  {
+    "id": "book-1793020866751",
+    "pnr": "BUS-G4EBN7",
+    "busId": "bus-101",
+    "busName": "Skyline Express Volvo Multi-Axle",
+    "operator": "Skyline Travels",
+    "busType": "AC Sleeper (2+1)",
+    "from": "New York",
+    "to": "Boston",
+    "date": "2026-10-27",
+    "departureTime": "06:30",
+    "arrivalTime": "11:00",
+    "duration": "4h 30m",
+    "boardingPoint": "Port Authority Bus Terminal (Gate 12) (06:30)",
+    "droppingPoint": "Newton Bus Station (10:30)",
+    "seats": [
+      "L9"
+    ],
+    "passengers": [
+      {
+        "seat": "L9",
+        "name": "charan",
+        "age": 20,
+        "gender": "Male"
+      }
+    ],
+    "contact": {
+      "email": "hfg@gmail.com",
+      "phone": "273541141"
+    },
+    "fareDetails": {
+      "baseFare": 48,
+      "tax": 2.4,
+      "total": 50.4
+    },
+    "status": "CONFIRMED",
+    "bookingTime": "2026-10-26T13:21:06.751Z"
+  },
+  {
+    "id": "book-1001",
+    "pnr": "BUS-94821",
+    "busId": "bus-101",
+    "busName": "Skyline Express Volvo Multi-Axle",
+    "operator": "Skyline Travels",
+    "busType": "AC Sleeper (2+1)",
+    "from": "New York",
+    "to": "Boston",
+    "date": "2026-10-27",
+    "departureTime": "06:30",
+    "arrivalTime": "11:00",
+    "boardingPoint": "Port Authority Bus Terminal (Gate 12) (06:30)",
+    "droppingPoint": "South Station Boston (11:00)",
+    "seats": [
+      "L1",
+      "L2"
+    ],
+    "passengers": [
+      {
+        "name": "Alex Morgan",
+        "age": 29,
+        "gender": "Female",
+        "seat": "L1"
+      },
+      {
+        "name": "David Miller",
+        "age": 31,
+        "gender": "Male",
+        "seat": "L2"
+      }
+    ],
+    "contact": {
+      "email": "alex.morgan@example.com",
+      "phone": "+1 (555) 234-5678"
+    },
+    "fareDetails": {
+      "baseFare": 96,
+      "tax": 4.8,
+      "total": 100.8
+    },
+    "status": "CONFIRMED",
+    "bookingTime": "2026-10-26T14:15:00.000Z"
+  }
+]

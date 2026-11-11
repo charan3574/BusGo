@@ -1,0 +1,1636 @@
+[
+  {
+    "id": "bus-101",
+    "name": "Skyline Express Volvo Multi-Axle",
+    "operator": "Skyline Travels",
+    "busType": "AC Sleeper (2+1)",
+    "category": "Luxury AC",
+    "from": "New York",
+    "to": "Boston",
+    "departureTime": "06:30",
+    "arrivalTime": "11:00",
+    "duration": "4h 30m",
+    "fare": 48,
+    "rating": 4.8,
+    "totalRatings": 342,
+    "boardingPoints": [
+      {
+        "location": "Port Authority Bus Terminal (Gate 12)",
+        "time": "06:30"
+      },
+      {
+        "location": "Queensboro Plaza",
+        "time": "07:00"
+      }
+    ],
+    "droppingPoints": [
+      {
+        "location": "Newton Bus Station",
+        "time": "10:30"
+      },
+      {
+        "location": "South Station Boston",
+        "time": "11:00"
+      }
+    ],
+    "amenities": [
+      "WiFi",
+      "Charging Port",
+      "Blanket",
+      "Water Bottle",
+      "Reading Light",
+      "Live Tracking"
+    ],
+    "totalSeats": 30,
+    "layout": {
+      "hasUpperDeck": true,
+      "lower": [
+        {
+          "id": "L1",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L2",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L3",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L4",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L5",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L6",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L7",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L8",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L9",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L10",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L11",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L12",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L13",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 5,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L14",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 5,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L15",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 5,
+          "priceOffset": 0,
+          "isWindow": true
+        }
+      ],
+      "upper": [
+        {
+          "id": "U1",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 1,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U2",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 1,
+          "priceOffset": 5,
+          "isWindow": false
+        },
+        {
+          "id": "U3",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 1,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U4",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 2,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U5",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 2,
+          "priceOffset": 5,
+          "isWindow": false
+        },
+        {
+          "id": "U6",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 2,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U7",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 3,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U8",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 3,
+          "priceOffset": 5,
+          "isWindow": false
+        },
+        {
+          "id": "U9",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 3,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U10",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 4,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U11",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 4,
+          "priceOffset": 5,
+          "isWindow": false
+        },
+        {
+          "id": "U12",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 4,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U13",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 5,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U14",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 5,
+          "priceOffset": 5,
+          "isWindow": false
+        },
+        {
+          "id": "U15",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 5,
+          "priceOffset": 5,
+          "isWindow": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "bus-102",
+    "name": "Apex InterCity Scania AC Seater",
+    "operator": "Apex Lines",
+    "busType": "AC Seater (2+2)",
+    "category": "Executive Seater",
+    "from": "New York",
+    "to": "Boston",
+    "departureTime": "09:00",
+    "arrivalTime": "13:15",
+    "duration": "4h 15m",
+    "fare": 34,
+    "rating": 4.6,
+    "totalRatings": 198,
+    "boardingPoints": [
+      {
+        "location": "Port Authority Bus Terminal (Gate 8)",
+        "time": "09:00"
+      }
+    ],
+    "droppingPoints": [
+      {
+        "location": "Back Bay Boston",
+        "time": "13:00"
+      },
+      {
+        "location": "South Station Boston",
+        "time": "13:15"
+      }
+    ],
+    "amenities": [
+      "WiFi",
+      "Charging Port",
+      "Reclining Seats",
+      "Reading Light"
+    ],
+    "totalSeats": 24,
+    "layout": {
+      "hasUpperDeck": false,
+      "lower": [
+        {
+          "id": "S1",
+          "deck": "lower",
+          "type": "seater",
+          "col": 1,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S2",
+          "deck": "lower",
+          "type": "seater",
+          "col": 2,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S3",
+          "deck": "lower",
+          "type": "seater",
+          "col": 4,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S4",
+          "deck": "lower",
+          "type": "seater",
+          "col": 5,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S5",
+          "deck": "lower",
+          "type": "seater",
+          "col": 1,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S6",
+          "deck": "lower",
+          "type": "seater",
+          "col": 2,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S7",
+          "deck": "lower",
+          "type": "seater",
+          "col": 4,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S8",
+          "deck": "lower",
+          "type": "seater",
+          "col": 5,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S9",
+          "deck": "lower",
+          "type": "seater",
+          "col": 1,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S10",
+          "deck": "lower",
+          "type": "seater",
+          "col": 2,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S11",
+          "deck": "lower",
+          "type": "seater",
+          "col": 4,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S12",
+          "deck": "lower",
+          "type": "seater",
+          "col": 5,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S13",
+          "deck": "lower",
+          "type": "seater",
+          "col": 1,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S14",
+          "deck": "lower",
+          "type": "seater",
+          "col": 2,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S15",
+          "deck": "lower",
+          "type": "seater",
+          "col": 4,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S16",
+          "deck": "lower",
+          "type": "seater",
+          "col": 5,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S17",
+          "deck": "lower",
+          "type": "seater",
+          "col": 1,
+          "row": 5,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S18",
+          "deck": "lower",
+          "type": "seater",
+          "col": 2,
+          "row": 5,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S19",
+          "deck": "lower",
+          "type": "seater",
+          "col": 4,
+          "row": 5,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S20",
+          "deck": "lower",
+          "type": "seater",
+          "col": 5,
+          "row": 5,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S21",
+          "deck": "lower",
+          "type": "seater",
+          "col": 1,
+          "row": 6,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S22",
+          "deck": "lower",
+          "type": "seater",
+          "col": 2,
+          "row": 6,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S23",
+          "deck": "lower",
+          "type": "seater",
+          "col": 4,
+          "row": 6,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S24",
+          "deck": "lower",
+          "type": "seater",
+          "col": 5,
+          "row": 6,
+          "priceOffset": 0,
+          "isWindow": true
+        }
+      ],
+      "upper": []
+    }
+  },
+  {
+    "id": "bus-103",
+    "name": "NightRider Premium Sleeper",
+    "operator": "NightRider Luxury",
+    "busType": "AC Sleeper (2+1)",
+    "category": "Ultra Luxury Sleeper",
+    "from": "New York",
+    "to": "Washington DC",
+    "departureTime": "23:00",
+    "arrivalTime": "03:45",
+    "duration": "4h 45m",
+    "fare": 52,
+    "rating": 4.9,
+    "totalRatings": 420,
+    "boardingPoints": [
+      {
+        "location": "Port Authority Bus Terminal (Gate 15)",
+        "time": "23:00"
+      },
+      {
+        "location": "Jersey City Journal Square",
+        "time": "23:30"
+      }
+    ],
+    "droppingPoints": [
+      {
+        "location": "Silver Spring Metro",
+        "time": "03:15"
+      },
+      {
+        "location": "Union Station DC",
+        "time": "03:45"
+      }
+    ],
+    "amenities": [
+      "WiFi",
+      "Charging Port",
+      "Blanket & Pillow",
+      "Water Bottle",
+      "Snack Pack",
+      "Reading Light",
+      "Live Tracking"
+    ],
+    "totalSeats": 24,
+    "layout": {
+      "hasUpperDeck": true,
+      "lower": [
+        {
+          "id": "L1",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L2",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L3",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L4",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L5",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L6",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L7",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L8",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L9",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L10",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L11",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L12",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": true
+        }
+      ],
+      "upper": [
+        {
+          "id": "U1",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 1,
+          "priceOffset": 6,
+          "isWindow": true
+        },
+        {
+          "id": "U2",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 1,
+          "priceOffset": 6,
+          "isWindow": false
+        },
+        {
+          "id": "U3",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 1,
+          "priceOffset": 6,
+          "isWindow": true
+        },
+        {
+          "id": "U4",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 2,
+          "priceOffset": 6,
+          "isWindow": true
+        },
+        {
+          "id": "U5",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 2,
+          "priceOffset": 6,
+          "isWindow": false
+        },
+        {
+          "id": "U6",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 2,
+          "priceOffset": 6,
+          "isWindow": true
+        },
+        {
+          "id": "U7",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 3,
+          "priceOffset": 6,
+          "isWindow": true
+        },
+        {
+          "id": "U8",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 3,
+          "priceOffset": 6,
+          "isWindow": false
+        },
+        {
+          "id": "U9",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 3,
+          "priceOffset": 6,
+          "isWindow": true
+        },
+        {
+          "id": "U10",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 4,
+          "priceOffset": 6,
+          "isWindow": true
+        },
+        {
+          "id": "U11",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 4,
+          "priceOffset": 6,
+          "isWindow": false
+        },
+        {
+          "id": "U12",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 4,
+          "priceOffset": 6,
+          "isWindow": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "bus-104",
+    "name": "Pacific Coast Cruiser",
+    "operator": "Coastline Transit",
+    "busType": "AC Seater (2+2)",
+    "category": "Express AC",
+    "from": "San Francisco",
+    "to": "Los Angeles",
+    "departureTime": "08:00",
+    "arrivalTime": "14:30",
+    "duration": "6h 30m",
+    "fare": 45,
+    "rating": 4.7,
+    "totalRatings": 280,
+    "boardingPoints": [
+      {
+        "location": "Transbay Transit Center SF",
+        "time": "08:00"
+      },
+      {
+        "location": "San Jose Caltrain Station",
+        "time": "09:00"
+      }
+    ],
+    "droppingPoints": [
+      {
+        "location": "Burbank Airport Station",
+        "time": "14:00"
+      },
+      {
+        "location": "Union Station Los Angeles",
+        "time": "14:30"
+      }
+    ],
+    "amenities": [
+      "WiFi",
+      "Charging Port",
+      "Water Bottle",
+      "Reclining Seats",
+      "Movie Screens"
+    ],
+    "totalSeats": 24,
+    "layout": {
+      "hasUpperDeck": false,
+      "lower": [
+        {
+          "id": "S1",
+          "deck": "lower",
+          "type": "seater",
+          "col": 1,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S2",
+          "deck": "lower",
+          "type": "seater",
+          "col": 2,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S3",
+          "deck": "lower",
+          "type": "seater",
+          "col": 4,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S4",
+          "deck": "lower",
+          "type": "seater",
+          "col": 5,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S5",
+          "deck": "lower",
+          "type": "seater",
+          "col": 1,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S6",
+          "deck": "lower",
+          "type": "seater",
+          "col": 2,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S7",
+          "deck": "lower",
+          "type": "seater",
+          "col": 4,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S8",
+          "deck": "lower",
+          "type": "seater",
+          "col": 5,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S9",
+          "deck": "lower",
+          "type": "seater",
+          "col": 1,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S10",
+          "deck": "lower",
+          "type": "seater",
+          "col": 2,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S11",
+          "deck": "lower",
+          "type": "seater",
+          "col": 4,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S12",
+          "deck": "lower",
+          "type": "seater",
+          "col": 5,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S13",
+          "deck": "lower",
+          "type": "seater",
+          "col": 1,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S14",
+          "deck": "lower",
+          "type": "seater",
+          "col": 2,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S15",
+          "deck": "lower",
+          "type": "seater",
+          "col": 4,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S16",
+          "deck": "lower",
+          "type": "seater",
+          "col": 5,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S17",
+          "deck": "lower",
+          "type": "seater",
+          "col": 1,
+          "row": 5,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S18",
+          "deck": "lower",
+          "type": "seater",
+          "col": 2,
+          "row": 5,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S19",
+          "deck": "lower",
+          "type": "seater",
+          "col": 4,
+          "row": 5,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S20",
+          "deck": "lower",
+          "type": "seater",
+          "col": 5,
+          "row": 5,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S21",
+          "deck": "lower",
+          "type": "seater",
+          "col": 1,
+          "row": 6,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "S22",
+          "deck": "lower",
+          "type": "seater",
+          "col": 2,
+          "row": 6,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S23",
+          "deck": "lower",
+          "type": "seater",
+          "col": 4,
+          "row": 6,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "S24",
+          "deck": "lower",
+          "type": "seater",
+          "col": 5,
+          "row": 6,
+          "priceOffset": 0,
+          "isWindow": true
+        }
+      ],
+      "upper": []
+    }
+  },
+  {
+    "id": "bus-105",
+    "name": "Starlight Golden Gate Sleeper",
+    "operator": "Coastline Transit",
+    "busType": "AC Sleeper (2+1)",
+    "category": "Luxury Sleeper",
+    "from": "San Francisco",
+    "to": "Los Angeles",
+    "departureTime": "22:30",
+    "arrivalTime": "05:15",
+    "duration": "6h 45m",
+    "fare": 58,
+    "rating": 4.9,
+    "totalRatings": 512,
+    "boardingPoints": [
+      {
+        "location": "Transbay Transit Center SF",
+        "time": "22:30"
+      }
+    ],
+    "droppingPoints": [
+      {
+        "location": "Hollywood Walk of Fame Stop",
+        "time": "04:50"
+      },
+      {
+        "location": "Union Station Los Angeles",
+        "time": "05:15"
+      }
+    ],
+    "amenities": [
+      "WiFi",
+      "Charging Port",
+      "Blanket & Pillow",
+      "Water Bottle",
+      "Reading Light",
+      "Live Tracking"
+    ],
+    "totalSeats": 24,
+    "layout": {
+      "hasUpperDeck": true,
+      "lower": [
+        {
+          "id": "L1",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L2",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L3",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L4",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L5",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L6",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L7",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L8",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L9",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L10",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L11",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L12",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": true
+        }
+      ],
+      "upper": [
+        {
+          "id": "U1",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 1,
+          "priceOffset": 7,
+          "isWindow": true
+        },
+        {
+          "id": "U2",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 1,
+          "priceOffset": 7,
+          "isWindow": false
+        },
+        {
+          "id": "U3",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 1,
+          "priceOffset": 7,
+          "isWindow": true
+        },
+        {
+          "id": "U4",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 2,
+          "priceOffset": 7,
+          "isWindow": true
+        },
+        {
+          "id": "U5",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 2,
+          "priceOffset": 7,
+          "isWindow": false
+        },
+        {
+          "id": "U6",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 2,
+          "priceOffset": 7,
+          "isWindow": true
+        },
+        {
+          "id": "U7",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 3,
+          "priceOffset": 7,
+          "isWindow": true
+        },
+        {
+          "id": "U8",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 3,
+          "priceOffset": 7,
+          "isWindow": false
+        },
+        {
+          "id": "U9",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 3,
+          "priceOffset": 7,
+          "isWindow": true
+        },
+        {
+          "id": "U10",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 4,
+          "priceOffset": 7,
+          "isWindow": true
+        },
+        {
+          "id": "U11",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 4,
+          "priceOffset": 7,
+          "isWindow": false
+        },
+        {
+          "id": "U12",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 4,
+          "priceOffset": 7,
+          "isWindow": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "bus-9174",
+    "name": "joisy",
+    "operator": "143",
+    "busType": "AC Sleeper (2+1)",
+    "category": "Express AC",
+    "from": "chikago",
+    "to": "detroit",
+    "departureTime": "08:00",
+    "arrivalTime": "13:30",
+    "duration": "5h 30m",
+    "fare": 55,
+    "rating": 4.8,
+    "totalRatings": 1,
+    "boardingPoints": [
+      {
+        "location": "chikago Central Station",
+        "time": "08:00"
+      }
+    ],
+    "droppingPoints": [
+      {
+        "location": "detroit Central Terminal",
+        "time": "13:30"
+      }
+    ],
+    "amenities": [
+      "WiFi",
+      "Charging Port",
+      "Reading Light",
+      "Water Bottle"
+    ],
+    "totalSeats": 24,
+    "layout": {
+      "hasUpperDeck": true,
+      "lower": [
+        {
+          "id": "L1",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L2",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L3",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 1,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L4",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L5",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L6",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 2,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L7",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L8",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L9",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 3,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L10",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 1,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": true
+        },
+        {
+          "id": "L11",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 3,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": false
+        },
+        {
+          "id": "L12",
+          "deck": "lower",
+          "type": "sleeper",
+          "col": 4,
+          "row": 4,
+          "priceOffset": 0,
+          "isWindow": true
+        }
+      ],
+      "upper": [
+        {
+          "id": "U1",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 1,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U2",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 1,
+          "priceOffset": 5,
+          "isWindow": false
+        },
+        {
+          "id": "U3",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 1,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U4",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 2,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U5",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 2,
+          "priceOffset": 5,
+          "isWindow": false
+        },
+        {
+          "id": "U6",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 2,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U7",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 3,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U8",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 3,
+          "priceOffset": 5,
+          "isWindow": false
+        },
+        {
+          "id": "U9",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 3,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U10",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 1,
+          "row": 4,
+          "priceOffset": 5,
+          "isWindow": true
+        },
+        {
+          "id": "U11",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 3,
+          "row": 4,
+          "priceOffset": 5,
+          "isWindow": false
+        },
+        {
+          "id": "U12",
+          "deck": "upper",
+          "type": "sleeper",
+          "col": 4,
+          "row": 4,
+          "priceOffset": 5,
+          "isWindow": true
+        }
+      ]
+    }
+  }
+]
